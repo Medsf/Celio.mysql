@@ -11,3 +11,7 @@ select * from estados where populacao > 10.00;
 select * from estados where populacao <= 10.00;
 
 select count(nome) as 'numero de estados centro-oeste' from estados where regiao = 'centro-oeste';
+
+select nome, regiao from estados 
+where populacao >=10 
+order by populacao

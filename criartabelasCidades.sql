@@ -6,3 +6,8 @@ Create table if not exists cidades (
     PRIMARY KEY (id),
     FOREIGN KEY (estado_id) REFERENCES estados (id_estado)
 )
+
+)
+INSERT INTO 'cidades' (nome ,area , estado_id)
+VALUES (
+    'Londrina', (select id_estado from estados where nome = 'Parana'), 199.3)
